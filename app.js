@@ -69,7 +69,7 @@ io.on("connection", function (uniqueSocket) {// unique information is in uniqueS
         }
     })
 })
-
-server.listen(3000, function () {
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, function () {
     console.log("Server listening on port 3000")
 })
